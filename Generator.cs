@@ -112,7 +112,7 @@ namespace Muqarnate_1
             if (!DA.GetData(2, ref levelOffset)) return;
             if (!DA.GetData(3, ref numLevels)) return;
             //if (!DA.GetData(4, ref h)) return;
-            if (!DA.GetDataList<double>  (4, h)) return;///in case of trouble check here!
+            if (!DA.GetDataList<double> (4, h)) return;///in case of trouble check here!
 
             // We should now validate the data and warn the user if invalid data is supplied.
             /* if (radius0 < 0.0)
@@ -141,9 +141,13 @@ namespace Muqarnate_1
             // The actual functionality will be in a different method:
 
             //Curve spiral = CreateSpiral(plane, radius0, radius1, turns);
+            //Curve spiral = CreateSpiral(plane, radius0, radius1, turns);
 
             // Finally assign the spiral to the output parameter.
             //DA.SetData(0, A_Lines);
+
+           // void shellMuq = CreateMuqarnas(List<double> h, Line axis, double levelOffset, int polygon, int numLevels);
+           // DA.SetData(0,shellMuq);
         }
 
         public static double DistanceCalc(Point3d A, Point3d B)
