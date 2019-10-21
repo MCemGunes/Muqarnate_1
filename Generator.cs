@@ -32,7 +32,7 @@ using System.Runtime.InteropServices;
 
 namespace Muqarnate_1
 {
-    public class Generetor : GH_Component
+    public class Generator : GH_Component
     {
         /// <summary>
         /// Each implementation of GH_Component must provide a public 
@@ -41,7 +41,7 @@ namespace Muqarnate_1
         /// Subcategory the panel. If you use non-existing tab or panel names, 
         /// new tabs/panels will automatically be created.
         /// </summary>
-        public Generetor()
+        public Generator()
           : base("Recursive", "Rec",
               "Generates a muqarnas from a single line within a recursive function.",
               "Muqarnate", "Primitive")
